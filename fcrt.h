@@ -73,6 +73,7 @@ SOFTWARE.
 #include "fcrtlib/crypto.h"
 #include "fcrtlib/memlist.h"
 #include "fcrtlib/reg.h"
+#include "fcrtlib/vardump.h"
 
 // -----------------------------------------------------------
 #ifndef _MSC_VER

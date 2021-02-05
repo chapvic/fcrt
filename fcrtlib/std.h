@@ -285,21 +285,6 @@ FCRT size_t __cdecl f_cwcs2str(char * _dst, wchar_t * _src, size_t _len);
 #endif // !_FCRT_NO_ALIAS
 
 // ---------------------------------------------------------------------------
-// vardump.c
-// ---------------------------------------------------------------------------
-FCRT void __cdecl f_vardump(void * ptr, size_t len, int padding);
-FCRT void __cdecl f_fvardump(const char * filename, void * ptr, size_t len, int padding, int force);
-FCRT void __cdecl f_vardump_ex(void * ptr, int padding);
-FCRT void __cdecl f_fvardump_ex(const char * filename, void * ptr, int padding, int force);
-
-#ifndef _FCRT_NO_ALIAS
-#define vardump f_vardump
-#define fvardump f_fvardump
-#define vardump_ex f_vardump_ex
-#define fvardump_ex f_fvardump_ex
-#endif // !_FCRT_NO_ALIAS
-
-// ---------------------------------------------------------------------------
 // base64.c
 // ---------------------------------------------------------------------------
 FCRT int __cdecl f_b64enc(char * _dst, char * _src, size_t _maxlen);
